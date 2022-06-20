@@ -1,0 +1,129 @@
+:root {
+    --BG-color: #312ac6;
+    --TEXT-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: var(--BG-color);
+    color: var(--TEXT-color);
+    background-image: url(../fondo.png);
+}
+
+/*Nav con el logo*/
+header {
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+.nav-container__content {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+/*Contenido principal*/
+main {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+
+    display: flex;
+    gap: 200px;
+}
+
+
+#left {
+    max-width: 450px;
+    width: 100%;
+
+}
+
+.left__image {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+#right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.right__tittle {
+    font-family: montserrat, sans-serif;
+    font-weight: 900;
+}
+
+.right__paragraph {
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+}
+
+.right__button {
+    width: 200px;
+    padding: 1rem .5rem;
+    border: none;
+    border-radius: 3rem;
+    box-shadow: 7px 7px 0px 0px;
+    font-family: montserrat, sans-serif;
+    font-weight: 900;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.socials {
+    max-width: 1200px;
+    width: 100%;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.socials__icons {
+    min-width: 100px;
+    display: flex;
+    gap: 10px;
+}
+
+li > a {
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+    color: white; /*Por que el color de los iconos se aplican cuando le defino el color a las "a"??? Y no apartir de "li" o socials-icons*/
+    border-radius: 100%;
+    border: 1px solid white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

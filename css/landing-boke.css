@@ -41,18 +41,20 @@ header {
 /*Contenido principal*/
 main {
     width: 100%;
-    max-width: 900px;
+    max-width: 1200px;
     margin: auto;
-
+    padding:  0 1rem;
     display: flex;
-    gap: 200px;
+    flex-wrap: wrap;
+
+    gap: 50px 200px;
 }
 
 
 #left {
+    min-width: 150px;
     max-width: 450px;
     width: 100%;
-
 }
 
 .left__image {
@@ -61,12 +63,19 @@ main {
 }
 
 
-
-
 #right {
+    width: 100%;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+@media screen and (max-width: 390px) {
+    #right {
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .right__tittle {
@@ -107,6 +116,12 @@ footer {
     padding: 2rem 1rem;
     display: flex;
     justify-content: flex-end;
+}
+
+@media screen and (max-width: 390px) {
+    .socials {
+        justify-content: center;
+    }
 }
 
 .socials__icons {
